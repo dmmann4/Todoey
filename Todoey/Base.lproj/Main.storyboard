@@ -33,7 +33,14 @@
                             <outlet property="delegate" destination="7pE-wv-r1y" id="6uJ-Pl-mk1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="iAC-vp-iic"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="iAC-vp-iic">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MjC-l7-zgK">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addTodoButtonPressed:" destination="7pE-wv-r1y" id="MEq-r2-7gd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lls-eW-0TX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,7 +56,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
